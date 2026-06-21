@@ -1,0 +1,245 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Himanshu Pal | VLSI Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+font-family:Inter,sans-serif;
+background:#000;
+color:#fff;
+overflow-x:hidden;
+}
+body:before{
+content:'';
+position:fixed;
+inset:0;
+background:
+radial-gradient(circle at 20% 20%,rgba(255,255,255,.06),transparent 30%),
+radial-gradient(circle at 80% 30%,rgba(255,255,255,.04),transparent 25%);
+pointer-events:none;
+}
+nav{
+position:fixed;top:0;width:100%;
+background:rgba(0,0,0,.7);
+backdrop-filter:blur(20px);
+border-bottom:1px solid #161616;
+z-index:999;
+}
+.nav{
+max-width:1200px;margin:auto;
+display:flex;justify-content:space-between;align-items:center;
+padding:18px 24px;
+}
+.nav a{color:#9ca3af;text-decoration:none;margin-left:20px;transition:.3s}
+.nav a:hover{color:#fff}
+.container{max-width:1150px;margin:auto;padding:0 24px}
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+}
+.hero img{
+width:190px;height:190px;border-radius:50%;
+object-fit:cover;
+border:1px solid #222;
+transition:.6s;
+}
+.hero img:hover{transform:scale(1.04)}
+.hero h1{
+font-size:clamp(4rem,10vw,8rem);
+letter-spacing:-5px;
+line-height:.9;
+margin-top:30px;
+}
+.tagline{
+font-size:clamp(1.1rem,2vw,1.6rem);
+max-width:850px;
+margin:20px auto;
+color:#e5e7eb;
+}
+.subtitle{color:#8a8a8f}
+.btns{margin-top:35px}
+.btn{
+display:inline-block;
+padding:14px 24px;
+margin:8px;
+border-radius:999px;
+text-decoration:none;
+font-weight:600;
+transition:.35s;
+}
+.primary{background:#fff;color:#000}
+.secondary{border:1px solid #222;color:#fff}
+.btn:hover{transform:translateY(-3px)}
+section{padding:120px 0}
+.title{
+font-size:3rem;
+letter-spacing:-2px;
+margin-bottom:35px;
+}
+.card{
+background:rgba(12,12,12,.9);
+border:1px solid #1f1f1f;
+border-radius:28px;
+padding:34px;
+margin-bottom:24px;
+transition:.4s;
+}
+.card:hover{
+transform:translateY(-6px);
+border-color:#333;
+background:#111;
+}
+.text{
+color:#b3b3b8;
+line-height:1.9;
+}
+.skills{
+display:flex;
+flex-wrap:wrap;
+gap:12px;
+}
+.skill{
+padding:12px 18px;
+border-radius:999px;
+background:#101010;
+border:1px solid #222;
+}
+.project-title{
+font-size:1.4rem;
+font-weight:700;
+margin-bottom:12px;
+}
+.hidden{
+opacity:0;
+transform:translateY(30px);
+transition:all 1s ease;
+}
+.show{
+opacity:1;
+transform:translateY(0);
+}
+footer{
+border-top:1px solid #151515;
+padding:40px;
+text-align:center;
+color:#777;
+}
+@media(max-width:768px){
+.nav .links{display:none}
+.title{font-size:2.2rem}
+}
+</style>
+</head>
+<body>
+
+<nav>
+<div class="nav">
+<div><b>Himanshu Pal</b></div>
+<div class="links">
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#research">Research</a>
+</div>
+</div>
+</nav>
+
+<section class="hero">
+<div class="container">
+<img src="profile.jpg" alt="Profile">
+<h1>Himanshu Pal</h1>
+<div class="tagline">Designing efficient digital hardware for next‑generation semiconductor systems.</div>
+<div class="subtitle">M.Tech VLSI Design Student | RTL Design & Digital VLSI Enthusiast</div>
+
+<div class="btns">
+<a class="btn primary" href="https://www.linkedin.com/in/himanshu-pal-587648203/" target="_blank">LinkedIn</a>
+<a class="btn secondary" href="https://github.com/Himanshu-VLSI" target="_blank">GitHub</a>
+<a class="btn secondary" href="mailto:himanshupal66y@gmail.com">Email</a>
+</div>
+</div>
+</section>
+
+<section id="about" class="hidden">
+<div class="container">
+<div class="title">About</div>
+<div class="card text">
+M.Tech VLSI Design student at Lovely Professional University with interests in RTL Design, Digital VLSI, ASIC Design and Semiconductor Technology. Experienced in Verilog HDL, SystemVerilog and Cadence Virtuoso.
+</div>
+</div>
+</section>
+
+<section id="skills" class="hidden">
+<div class="container">
+<div class="title">Core Expertise</div>
+<div class="skills">
+<div class="skill">Verilog HDL</div>
+<div class="skill">SystemVerilog</div>
+<div class="skill">RTL Design</div>
+<div class="skill">Digital VLSI Design</div>
+<div class="skill">Cadence Virtuoso</div>
+<div class="skill">CMOS Design</div>
+<div class="skill">Semiconductor Technology</div>
+</div>
+</div>
+</section>
+
+<section id="projects" class="hidden">
+<div class="container">
+<div class="title">Featured Projects</div>
+
+<div class="card">
+<div class="project-title">True Random Number Generator (TRNG)</div>
+<div class="text">Designed and implemented a hardware-based True Random Number Generator using ring oscillator jitter in Verilog HDL for hardware security applications.</div>
+</div>
+
+<div class="card">
+<div class="project-title">Object Detection Rover</div>
+<div class="text">Developed an intelligent rover using OpenCV and ESP32 capable of object detection and navigation.</div>
+</div>
+
+<div class="card">
+<div class="project-title">CMOS Analog Design Projects</div>
+<div class="text">Designed CMOS circuits, layouts, DRC and LVS verification using Cadence Virtuoso.</div>
+</div>
+
+</div>
+</section>
+
+<section id="research" class="hidden">
+<div class="container">
+<div class="title">Research Interests</div>
+<div class="card text">
+RTL Design<br><br>
+Digital VLSI<br><br>
+ASIC Design<br><br>
+Low‑Power Design<br><br>
+Semiconductor Devices
+</div>
+</div>
+</section>
+
+<footer>
+© 2026 Himanshu Pal • VLSI Portfolio
+</footer>
+
+<script>
+const observer=new IntersectionObserver((entries)=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){entry.target.classList.add('show');}
+});
+},{threshold:0.15});
+
+document.querySelectorAll('.hidden').forEach(el=>observer.observe(el));
+</script>
+
+</body>
+</html>
